@@ -13,7 +13,7 @@ L'architecture a été inspirée par ```U-Net```: Convolutional Networks for Bio
 
 ## Description des données
 
-Les données du projet contiennent ```30 images``` d'une résolution de ```512*512```, ce qui est loin d'être suffisant pour alimenter un réseau de neurones d'apprentissage en profondeur. J'utilise un module appelé ```ImageDataGenerator``` dans ```keras.preprocessing.image``` pour augmenter les données (fichier dataPrepare.ipynb).
+Les données du projet contiennent ```30 images``` d'une résolution de ```512*512```, ce qui est loin d'être suffisant pour alimenter un réseau de neurones d'apprentissage en profondeur. J'utilise un module appelé ```ImageDataGenerator``` dans ```keras.preprocessing.image``` pour augmenter les données (fichier dataPrepare.ipynb). Les targets sont des masques d'images, pas des catégories discrètes.Chaque donnée est une paire d'images (l'image normale et le masque avec les contours).
 
 ## Dépendances
 * Ce didacticiel dépend des bibliothèques suivantes:
