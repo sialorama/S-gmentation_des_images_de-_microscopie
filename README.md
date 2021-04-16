@@ -13,9 +13,10 @@ L'architecture a été inspirée par ```U-Net```: Convolutional Networks for Bio
 
 ## Description des données
 
-Les données du projet contiennent ```30 images``` d'une résolution de ```512*512```, ce qui est loin d'être suffisant pour alimenter un réseau de neurones d'apprentissage en profondeur. J'utilise un module appelé ```ImageDataGenerator``` dans ```keras.preprocessing.image``` pour augmenter les données (fichier dataPrepare.ipynb). Les targets sont des masques d'images, pas des catégories discrètes.Chaque donnée est une paire d'images (l'image normale et le masque avec les contours).
+Les données du projet contiennent ```30 images``` d'une résolution de ```512*512```, ce qui est loin d'être suffisant pour alimenter un réseau de neurones d'apprentissage en profondeur. J'utilise un module appelé ```ImageDataGenerator``` dans ```keras.preprocessing.image``` pour augmenter les données (fichier dataPrepare.ipynb). 
+Les targets sont des masques d'images, et non pas des catégories discrètes. Chaque donnée est une paire d'images (l'image normale et le masque avec les contours).
 
-## Dépendances
+## Dépendances 
 * Ce didacticiel dépend des bibliothèques suivantes:
 ```
     Tensorflow
@@ -38,13 +39,16 @@ Utilisez le modèle entraîné pour effectuer une segmentation sur des images de
 
 ## Conclusion (avantages et inconvénients, concurrents, recommandations…)
 
-À propos de Keras:
+* À propos de Keras:
 
 Keras est une bibliothèque de réseaux de neurones minimaliste et hautement modulaire, écrite en Python et capable de fonctionner sur TensorFlow ou Theano. Il a été développé dans le but de permettre une expérimentation rapide. Être capable de passer de l'idée au résultat avec le moins de retard possible est essentiel pour faire de bonnes recherches.
 
 Utilisez Keras si vous avez besoin d'une bibliothèque d'apprentissage en profondeur qui:
 
-permet un prototypage simple et rapide (grâce à une modularité totale, un minimalisme et une extensibilité). prend en charge à la fois les réseaux convolutifs et les réseaux récurrents, ainsi que les combinaisons des deux. prend en charge les schémas de connectivité arbitraires (y compris la formation multi-entrées et multi-sorties). fonctionne de manière transparente sur le CPU et le GPU. 
+    Permet un prototypage simple et rapide (grâce à une modularité totale, un minimalisme et une extensibilité).
+    Prend en charge à la fois les réseaux convolutifs et les réseaux récurrents, ainsi que les combinaisons des deux.
+    Prend en charge les schémas de connectivité arbitraires (y compris la formation multi-entrées et multi-sorties).
+    Fonctionne de manière transparente sur le CPU et le GPU. 
 
 [Lire la documentation de Keras](https://keras.io/)
 
