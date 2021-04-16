@@ -31,13 +31,13 @@ Les targets sont des masques d'images, et non pas des catégories discrètes. Ch
 * Après 5 époques, la précision calculée est d'environ 0,97.
 * La fonction de perte pour l'entraînement n'est en fait qu'une crossentropie binaire.
 
-## Présentation de l'architecture utilisée
+## résultat
 Utilisez le modèle entraîné pour effectuer une segmentation sur des images de test, le résultat:
 <br>
 ![Animation](images/Animation-Input-Labels.gif)
 <br>
 
-## Conclusion (avantages et inconvénients, concurrents, recommandations…)
+## Conclusion
 
 * À propos de Keras:
 
